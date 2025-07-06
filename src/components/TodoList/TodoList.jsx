@@ -1,5 +1,5 @@
 import { TodoCard } from "../TodoCard/TodoCard";
-import "./todoList.css";
+import "./TodoList.css";
 
 export const TodoList = ({ todoList, setTodoList }) => {
   if (todoList && todoList.length > 0) {
