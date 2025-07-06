@@ -1,0 +1,44 @@
+.todo-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 500px;
+  height: 40px;
+  padding-left: 20px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.103);
+  transition: all 0.3s;
+}
+
+.btn.complete {
+  background-color: rgb(2, 141, 2);
+  border-radius: 0;
+  width: 60px;
+  &:hover {
+    background-color: rgb(2, 99, 2);
+  }
+}
+
+.btn.delete {
+  border-right: none;
+  background-color: rgb(228, 9, 9);
+  border-radius: 0px 6px 6px 0px;
+  width: 60px;
+  &:hover {
+    background-color: rgb(179, 4, 4);
+  }
+}
+
+ion-icon {
+  font-size: 20px;
+}
+
+.todo-card.completed {
+  background-color: rgba(0, 128, 0, 0.596);
+  border: 1px solid green;
+  color: white;
+  text-decoration: line-through;
+}
